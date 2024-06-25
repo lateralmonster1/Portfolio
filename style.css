@@ -24,9 +24,11 @@ body {
     display:inline-block;
 }
 .container {
-    max-width: 1200px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 20px;
+    display:flex
+    flex-direction: column;
 }
 
 ul {
@@ -117,8 +119,9 @@ float:left
 
 #contact {
     border-radius: 5px;
-position: relative;
-top: 300px
+position: relative; 
+top: 400px
+
 }
 
 .box-model  {
@@ -148,6 +151,8 @@ div {
 
  .section-title{
     color:goldenrod
+    display: flex;
+    position-down: 10px
  }
 
 
@@ -206,9 +211,7 @@ footer {
         margin-right: 10px;
     }
 
-    .container {
-        padding: 10px;
-    }
+   
 
     main {
         padding-top: 60px;
