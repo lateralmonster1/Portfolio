@@ -6,14 +6,18 @@ body {
 }
 
 
-@keyframes slideIn {
-    from { transform:
-        translateX(-100%);  }
-        to { transform: translateX(0);  }
-}
+@keyframes fadeIn {
+    0% { 
+        opacity: 0;
+    }
+   100% {
+        opacity: 1;
+        }
+     }
+
     
 #animation {
-   animation: slideIn 3s ease-out;
+   animation: fadeIn 3s forwards;
    font-size: x-large; 
    font-style: oblique;
     padding: 20px;
@@ -94,9 +98,9 @@ height:100px
 background-color:goldenrod;
 border: 2px solid #goldenrod
 padding: 20px;
-margin: 20px;
+margin:20px;
 transition: all 0.3s ease;
-float:left;
+float:left
 }
 .box:hover {
     transform: scale(1.1);
@@ -111,10 +115,29 @@ float:left;
     border-color: goldenrod
 }
 
+#contact {
+    border-radius: 5px;
+position: relative;
+top: 300px
+}
 
+.box-model  {
+background-image:url("c:\Users\Mikes\Downloads\UCF\Bootcamp\BOOTCAMP\class\challenges\Code_Refactor\assets\images\digital-marketing-meeting.jpg")
+width:100px
+height:100px
+background-size:cover;
+background-position: center;
+position: relative;
 
-
-
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+overflow: hidden;
+}
+#cover {
+    padding: 40px;
+    border:#bea749
+    margin:
+}
 
 div {
     color: goldenrod
