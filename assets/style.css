@@ -2,22 +2,41 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(16, 13, 206);
+    background-color: rgb(51, 80, 185);
+}
+h1 {
+    padding-left: 10px;
+}
+#my-photo {
+   
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+#my-image img{
+    width: 100%;
+    height:auto;
+    display: block;
 }
 
-
-@keyframes fadeIn {
-    0% { 
+    
+}
+@keyframes fadeInBounceHeartbeat {
+    0% {
         opacity: 0;
+        transform: scale(0.0);
     }
-   100% {
+    
+    
+    100% {
         opacity: 1;
-        }
-     }
-
+        transform: scale(1);
+    }
+}
     
 #animation {
-   animation: fadeIn 3s forwards;
+    animation: fadeInBounceHeartbeat 3.5s ease-in-out;
    font-size: x-large; 
    font-style: oblique;
     padding: 20px;
@@ -65,19 +84,19 @@ h1 {
     bottom: 0;
     width: 100%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7)
-color; white;
+    color: crimson;
 text-align: center;
 transition: bottom 0.3s;
+background-image:url("c:\Users\Mikes\Downloads\UCF\Bootcamp\BOOTCAMP\class\challenges\Code_Refactor\assets\images\digital-marketing-meeting.jpg")
 }
 .box:hover .cover {
     bottom: 100%
 }
 
 ul li {
-    background-color:#333
-    border-radius: 5px
-    color:#bea749
+float:  right;
+  margin-left: 10px;
+    color: crimson;
 }
 
 #header-1 {
@@ -142,8 +161,8 @@ overflow: hidden;
     margin:
 }
 
-div {
-    color: goldenrod
+#p-aboutme {
+    color: rgb(237, 202, 112)
 
 }
 
