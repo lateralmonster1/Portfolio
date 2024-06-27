@@ -94,9 +94,11 @@ background-image:url("c:\Users\Mikes\Downloads\UCF\Bootcamp\BOOTCAMP\class\chall
 }
 
 ul li {
-float:  right;
-  margin-left: 10px;
-    color: crimson;
+position: absolute;
+top: 10px;
+right: 10px;
+color: red;
+font-size: 20px
 }
 
 #header-1 {
@@ -111,6 +113,7 @@ float:  right;
     border:goldenrod
     box-shadow: 0 4px 8px goldenrod
     margin:px #bea749;
+    
 
 }
 .box-model {
