@@ -1,77 +1,93 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier Leon's Portfolio</title>
-    <link rel="stylesheet" href="assets\style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
-<style>
-    h1 {color: rgb(246, 177, 5)}
-</style>
 <body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Xavier Leon</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#header-1">About Me</a></li>
+                <li><a href="#section-one">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a id="open-modal" href="#modal1">My Favorites</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <section id="header-1">
-        <div id="About-me"><h1> About Me</h1>
-        <ul>
-            
-            <li>Node.js</li>
-            <li></li>
-            <li></li>
-            
-        </ul>
-    </div>
-         </section>
-         <div id="my-photo">
-            <img src="assets\Portfolio_photo.JPEG" >
-         </div>
+        <div id="About-me">
+            <h1>About Me</h1>
+            <ul>
+                <li>I was born and raised in central Florida</li>
+                <li>I love sports and learning new things from people</li>
+                <li>Developing software is one of my favorite things to do!</li>
+            </ul>
+        </div>
+        <div id="my-photo">
+            <img src="assets/Portfolio_photo.JPEG" alt="Xavier Leon">
+        </div>
         <div id="p-aboutme">
             <p id="animation">
-                My name is Xavier Leon, and I am a junior full-stack program developer. I would love to build and create your dreams into a reality!
+                My name is Xavier Leon, and I am a junior full-stack web developer. I am passionate about building and creating web applications that bring ideas to life!
             </p>
         </div>
     </section>
-    
-    <section id="section-one"></section>
 
-    <h1> Personal Portfolio</h1>
-    
-<div class="box-model">
-    <a href="https://lateralmonster1.github.io/Code_Refactor/" class="box"
-     target="_blank">
-        <div class="cover">Node.js</div> 
-        </a>
-    <a href=""
-    class="box">
-        <div class="cover"> Link 2</div>
-        </a>
-        <a href=""
-        class="box">
-        <div class="cover">Link 3
-</div>
-        </a>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-         
-</section>
+    <section id="section-one">
+        <h1>Personal Portfolio</h1>
+        <div class="box-model">
+            <a href="#" class="box">
+                <div class="cover">Project 1</div>
+            </a>
+            <a href="#" class="box">
+                <div class="cover">Project 2</div>
+            </a>
+            <a href="#" class="box">
+                <div class="cover">Project 3</div>
+            </a>
+        </div>
+    </section>
 
-<section id="contact">
-    <div class="container">
-        <h1 class="section-title">Contact</h1>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section id="contact">
+        <div class="container">
+            <h1 class="section-title">Contact</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn waves-effect waves-light">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>My Favorites</h4>
+            <p>Favorite projects, links, etc.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
     </div>
-</section>
+
+    <footer>
+        <p>&copy; 2024 Xavier Leon. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/scripts.js"></script>
 </body>
 </html>

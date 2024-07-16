@@ -2,244 +2,213 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(51, 80, 185);
+    background-color: #34495e; /* Updated background color */
+    color: #fff; /* Updated text color */
+}
+
+nav {
+    background-color: #182f46; /* Updated nav background color */
+    height: 60px; /* Fixed height for nav */
+    line-height: 60px; /* Centered text vertically */
+    padding: 0 20px;
+}
+
+nav .brand-logo {
+    font-size: 1.5rem; /* Larger font size for logo */
+    font-weight: bold;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Yellow hover color */
 }
 h1 {
-    padding-left: 10px;
+    font-style: oblique;
+    color: rgb(237, 6, 52)}
+    @keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        }
+    } h1 {animation: fadeIn 2s ease-in-out;
 }
-#my-photo {
-   
-    border-radius: 10px;
-    overflow: hidden;
-    width: 400px;
-    height: 400px;
+    
+#header-1 {
+    padding: 40px 20px;
+    text-align: center;
 }
-#my-image img{
+
+#About-me {
     width: 100%;
-    height:auto;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#my-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#my-photo img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
-    
-}
-@keyframes fadeInBounceHeartbeat {
-    0% {
-        opacity: 0;
-        transform: scale(0.0);
-    }
-    
-    
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-    
-#animation {
-    animation: fadeInBounceHeartbeat 3.5s ease-in-out;
-   font-size: x-large; 
-   font-style: oblique;
-    padding: 20px;
-    display:inline-block;
-}
-.container {
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    display:flex
-    flex-direction: column;
+#p-aboutme {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-ul {
-    list-style-type: none;
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.box-model {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 20px;
-    padding: 0;
-    margin: 0;
-   
 }
-.box-model{
-    display: flex;
-    gap:  20px;
-}
+
 .box {
     position: relative;
     width: 200px;
     height: 200px;
-    background-color:#333
+    background-color: #2c3e50;
     overflow: hidden;
-    text-decoration:none;
+    text-decoration: none;
     transition: transform 0.3s ease;
-    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-h1 {
-    margin-bottom: 40px;
-}
+
 .box:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
+
 .cover {
-    position:absolute;
+    position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
-    padding: 20px;
-    color: crimson;
-text-align: center;
-transition: bottom 0.3s;
-background-image:url("c:\Users\Mikes\Downloads\UCF\Bootcamp\BOOTCAMP\class\challenges\Code_Refactor\assets\images\digital-marketing-meeting.jpg")
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    transition: bottom 0.3s;
 }
+
 .box:hover .cover {
-    bottom: 100%
-}
-
-ul li {
-position: absolute;
-top: 10px;
-right: 10px;
-color: red;
-font-size: 20px
-}
-
-#header-1 {
-    background-color:black
-    
-}
-#About-me {
-    display:flex;
-    justify-content:center;
-    width: 700px;
-    height: 50px;
-    border:goldenrod
-    box-shadow: 0 4px 8px goldenrod
-    margin:px #bea749;
-    
-
-}
-.box-model {
-width: 100px
-height:100px
-background-color:goldenrod;
-border: 2px solid #goldenrod
-padding: 20px;
-margin:20px;
-transition: all 0.3s ease;
-float:left
-}
-.box:hover {
-    transform: scale(1.1);
-}
-
-#section-one {
-    width:100px
-    height:100px
-    padding:20px
-    margin:20px
-    border:2px
-    border-color: goldenrod
+    bottom: -50px; /* Slide up effect */
 }
 
 #contact {
-    border-radius: 5px;
-position: relative; 
-top: 400px
-
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.box-model  {
-background-image:url("c:\Users\Mikes\Downloads\UCF\Bootcamp\BOOTCAMP\class\challenges\Code_Refactor\assets\images\digital-marketing-meeting.jpg")
-width:100px
-height:100px
-background-size:cover;
-background-position: center;
-position: relative;
-
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-border-radius: 8px;
-overflow: hidden;
-}
-#cover {
-    padding: 40px;
-    border:#bea749
-    margin:
-}
-
-#p-aboutme {
-    color: rgb(237, 202, 112)
-
-}
-
-
-
- .section-title{
-    color:goldenrod
-    display: flex;
-    position-down: 10px
- }
-
-
-/* Form Styles */
 form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #ffcc00;
 }
-
+#animation{
+    font-style: italic;
+    font-size: large;
+}
 form input,
 form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    transition: border-color 0.3s ease;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    color: #fff;
 }
-
-
 
 form input:focus,
 form textarea:focus {
-    border-color: #ffcc00; /* Yellow border on focus */
+    outline: none;
+    border-color: #ffcc00;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background on focus */
 }
 
 form button {
-   
-    background-color:goldenrod;
+    background-color: #ffcc00;
     color: #fff;
-    border: 2px;
+    border: none;
     border-radius: 25px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 form button:hover {
-    background-color: #bea749; /* Yellow background on hover */
-    transform: translateY(-3px); /* Move up on hover */
+    background-color: #e5a609; /* Darker yellow on hover */
+    transform: translateY(-3px);
 }
 
-/* Footer Styles */
 footer {
-    text-align: center;
-    background-color: #333;
+    background-color: #2c3e50;
     color: #fff;
+    text-align: center;
     padding: 20px 0;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* Media Queries for Responsive Design */
 @media only screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav ul li {
-        margin-right: 10px;
+        display: block;
+        margin-bottom: 10px;
     }
 
-   
-
-    main {
-        padding-top: 60px;
+    #header-1 {
+        padding: 20px;
     }
 
-    footer {
-        position: relative;
+    #my-photo {
+        width: 200px;
+        height: 200px;
     }
-}
+
+    .box-model {
+        flex-direction
