@@ -4,13 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier Leon's Portfolio</title>
-    <link rel="stylesheet" href="Portfolio/assets/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+     body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #34495e; /* Updated background color */
+    color: #fff; /* Updated text color */
+}
+nav {
+    background-color: #182f46; /* Updated nav background color */
+    height: 60px; /* Fixed height for nav */
+    line-height: 60px; /* Centered text vertically */
+    padding: 0 20px;
+}
+nav .brand-logo {
+    font-size: 1.5rem; /* Larger font size for logo */
+    font-weight: bold;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffcc00; /* Yellow hover color */
+}
+h1 {
+    font-style: oblique;
+    color: rgb(237, 6, 52)}
+    @keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        }
+    } h1 {animation: fadeIn 2s ease-in-out;
+}
+#header-1 {
+    padding: 40px 20px;
+    text-align: center;
+}
+#About-me {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-style: italic; 
+    font-size: large;
+}
+#my-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#my-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#p-aboutme {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.box-model {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #2c3e50;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.box:hover {
+    transform: scale(1.05);
+}
+.cover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    transition: bottom 0.3s;
+}
+.box:hover .cover {
+    bottom: -50px; /* Slide up effect */
+}
+#contact {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #ffcc00;
+}
+#animation{
+    font-style: italic;
+    font-size: large;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    color: #fff;
+}
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ffcc00;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background on focus */
+}
+form button {
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+form button:hover {
+    background-color: #e5a609; /* Darker yellow on hover */
+    transform: translateY(-3px);
+}
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    #header-1 {
+        padding: 20px;
+    }
+
+    #my-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box-model {
+        flex-direction   
+    </style>
 </head>
+
 <body>
     <nav>
         <div class="nav-wrapper">
@@ -88,6 +280,25 @@
         <p>&copy; 2024 Xavier Leon. All rights reserved.</p>
     </footer>
 
-    <script src="assets\script.js"></script>
+    <script>
+        // Initialize Materialize components
+$(document).ready(function(){
+    $('.modal').modal();
+    $('.sidenav').sidenav();
+    $('.scrollspy').scrollSpy();
+    
+    // Smooth scrolling for anchor links
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+});
+
+     </script>
 </body>
 </html>
